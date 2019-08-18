@@ -8,11 +8,11 @@ package com.ahscuml.example.Interface.dynamicproxy;
 
 /**
  * 时间代理函数，用来计算小鸟飞行的时间
- * */
+ */
 public class BirdTimeProxy implements Flyable {
     /**
      * flyable指代实现了Flyable接口的类的对象
-     * */
+     */
     private Flyable flyable;
 
     public BirdTimeProxy(Flyable flyable) {

@@ -1,9 +1,11 @@
 package com.ahscuml.company.s360;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 一堆小胖子N，坐M个椅子，求最小淘气值的最大值。
+ *
  * @author ahscuml
  * @date 2019/3/7
  * @time 19:35
@@ -19,17 +21,17 @@ public class Q1 {
             num[i] = in.nextInt();
             i++;
         }
-        System.out.println(find(N,M,num));
+        System.out.println(find(N, M, num));
     }
 
     public static int find(int N, int M, int[] num) {
         Arrays.sort(num);
         int res = 0;
-        if(N < M) {
+        if (N < M) {
             res = 0;
         } else {
             int left = 0, right = 2 * (N - M) - 1;
-            while(left < right) {
+            while (left < right) {
                 res = Math.max(num[left] + num[right], res);
 
             }

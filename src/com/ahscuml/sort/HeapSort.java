@@ -69,8 +69,6 @@ public class HeapSort {
         }
     }
 
-    public void shiftDown
-
     /**
      * 下标从1开始的堆排序
      * *//*

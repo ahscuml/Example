@@ -14,12 +14,12 @@ public class Q2 {
         int k = sc.nextInt();
         int min = Integer.MAX_VALUE;
         int total = 0;
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int cur = sc.nextInt();
-            min = Math.min(min,cur);
+            min = Math.min(min, cur);
             total += cur;
         }
-        if((total - n * min) % k == 0) {
+        if ((total - n * min) % k == 0) {
             System.out.println((total - n * min) / k);
         } else {
             System.out.println((total - n * min) / k + 1);

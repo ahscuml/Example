@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 /**
  * 显示目录中的文件名，匿名内部类作为参数
+ *
  * @author ahscuml
  * @date 2019/4/22
  * @time 21:24
@@ -20,6 +21,7 @@ public class DirList3 {
         } else {
             list = path.list(new FilenameFilter() {
                 private Pattern pattern = Pattern.compile(args[0]);
+
                 @Override
                 public boolean accept(File dir, String name) {
                     return pattern.matcher(name).matches();

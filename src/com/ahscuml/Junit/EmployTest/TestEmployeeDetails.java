@@ -13,7 +13,7 @@ public class TestEmployeeDetails {
 
     /**
      * 测试appraisal
-     * */
+     */
     @Test
     public void testCalculateAppriasal() {
         employee.setName("test");
@@ -21,14 +21,14 @@ public class TestEmployeeDetails {
         employee.setMonthlySalary(8000);
         double appraisal = empBusinessLogic.calculateAppraisal(employee);
         // what is dalta
-        org.junit.Assert.assertEquals(500,appraisal,0.0);
+        org.junit.Assert.assertEquals(500, appraisal, 0.0);
     }
 
     public void testCalculateYearlySalary() {
         employee.setName("Rajeev");
         employee.setAge(25);
         employee.setMonthlySalary(8000);
-        double salary= empBusinessLogic.calculateYearlySalary(employee);
+        double salary = empBusinessLogic.calculateYearlySalary(employee);
         org.junit.Assert.assertEquals(96000, salary, 0.0);
     }
 }

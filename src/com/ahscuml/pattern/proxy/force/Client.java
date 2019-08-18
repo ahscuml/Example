@@ -9,7 +9,7 @@ public class Client {
     /**
      * 强制代理类，智能通过真实角色查找到代理角色
      * 高层模块new了一个真实角色，但是返回的却是一个代理角色
-     * */
+     */
     public static void main(String[] args) {
         // 创建游戏对象
         IGamePlayer player = new GamePlayer("真实用户");

@@ -17,7 +17,7 @@ public class collections {
         System.out.println(arrayList);
         Collections.replaceAll(arrayList, 1, 10);
         System.out.println(arrayList);
-        Collections.swap(arrayList,1,2);
+        Collections.swap(arrayList, 1, 2);
         System.out.println(arrayList);
     }
 }

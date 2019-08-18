@@ -16,8 +16,8 @@ public class AHashMap {
     public boolean containsKey(){}*/
 
     public static void main(String[] args) {
-        HashMap<Integer,Integer> map = new HashMap();
-        map.put(1,2);
+        HashMap<Integer, Integer> map = new HashMap();
+        map.put(1, 2);
 
     }
 

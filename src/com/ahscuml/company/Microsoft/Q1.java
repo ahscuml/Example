@@ -23,9 +23,9 @@ public class Q1 {
                         }
                     }
                 }
-                 System.out.print(dp[i][j] + " ");
+                System.out.print(dp[i][j] + " ");
             }
-             System.out.println(" ");
+            System.out.println(" ");
         }
         for (int j = 1; j <= input1; j++) {
             System.out.print(dp[input3][j] + " ");

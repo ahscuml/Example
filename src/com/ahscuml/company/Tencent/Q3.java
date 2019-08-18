@@ -10,27 +10,27 @@ import java.util.Scanner;
 public class Q3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNextInt()){
+        while (sc.hasNextInt()) {
             int n = sc.nextInt();
             int[] array = new int[n];
-            for(int i = 0; i < n; i++) {
+            for (int i = 0; i < n; i++) {
                 array[i] = i + 1;
             }
             // System.out.println(array);
             // 记得输出的时候还要有空格
             int curIndex = 0;
 
-            for(int i = 0; i < n; ) {
+            for (int i = 0; i < n; ) {
                 // 如果当前的不为0，那么就扔掉(输出) 同时i+1;
                 // 如果接下来的不为0，那么跳过
                 // 也就是说，我需要找到两个不为0的内容，然后一个赋值为0，一个不处理
 
                 // 输出的个数
                 int num = 0;
-                while (num < 2){
-                    if(num == 0) {
+                while (num < 2) {
+                    if (num == 0) {
                         if (array[curIndex] != 0) {
-                            if(i == n - 1) {
+                            if (i == n - 1) {
                                 System.out.print(array[curIndex]);
                             } else {
                                 System.out.print(array[curIndex] + " ");
@@ -38,7 +38,7 @@ public class Q3 {
                             array[curIndex] = 0;
                             curIndex++;
                             i++;
-                            if(i == n) {
+                            if (i == n) {
                                 break;
                             }
                             num++;
@@ -46,7 +46,7 @@ public class Q3 {
                             curIndex++;
                         }
                     } else {
-                        if(array[curIndex] != 0) {
+                        if (array[curIndex] != 0) {
                             curIndex++;
                             num++;
                         } else {

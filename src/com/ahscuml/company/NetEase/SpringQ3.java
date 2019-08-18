@@ -33,7 +33,7 @@ public class SpringQ3 {
         int indexA = 0, indexB = 0;
         for (int i = 0; i < num; i++) {
             int temp = number[i];
-            if (temp%2 == 0) {
+            if (temp % 2 == 0) {
                 arrayA[indexA++] = temp;
             } else {
                 arrayB[indexB++] = temp;
@@ -43,13 +43,13 @@ public class SpringQ3 {
             for (int i = 0; i < arrayB.length; i++) {
                 System.out.print(arrayB[i] + " ");
             }
-        } else if(arrayB.length == 0) {
+        } else if (arrayB.length == 0) {
             for (int i = 0; i < arrayA.length; i++) {
                 System.out.print(arrayA[i] + " ");
             }
         } else {
             Arrays.sort(number);
-            for(int i = 0; i < number.length; i++) {
+            for (int i = 0; i < number.length; i++) {
                 System.out.print(number[i] + " ");
             }
         }

@@ -9,7 +9,7 @@ public class Bird2 extends Bird {
     /**
      * 如果Bird是源码，无法修改
      * 同样目标是记录时间差，继承可以实现这个功能
-     * */
+     */
     @Override
     public void fly() {
         long start = System.currentTimeMillis();

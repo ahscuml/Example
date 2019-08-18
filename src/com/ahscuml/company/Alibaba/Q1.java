@@ -24,7 +24,7 @@ public class Q1 {
         // 三个问题，一个先求编号
         int year = 0;
         while (true) {
-            if(pig(year) <= m)
+            if (pig(year) <= m)
                 year++;
             else
                 break;

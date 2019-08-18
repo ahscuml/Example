@@ -10,8 +10,8 @@ import java.util.Random;
 
 /**
  * 要做的事情就是记录小鸟飞行的时间差
- * */
-public class Bird implements Flyable{
+ */
+public class Bird implements Flyable {
     @Override
     public void fly() {
         System.out.println("Bird is flying...");

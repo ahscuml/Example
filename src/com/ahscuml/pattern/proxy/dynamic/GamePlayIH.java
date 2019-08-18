@@ -1,7 +1,6 @@
 package com.ahscuml.pattern.proxy.dynamic;
 
 import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
@@ -16,17 +15,17 @@ import java.lang.reflect.Method;
 public class GamePlayIH implements InvocationHandler {
     /**
      * 被代理者
-     * */
+     */
     Class cls = null;
 
     /**
      * 被代理实例
-     * */
+     */
     Object obj = null;
 
     /**
      * 构造函数:我要代理谁
-     * */
+     */
     public GamePlayIH(Object _obj) {
         this.obj = _obj;
     }
@@ -34,7 +33,7 @@ public class GamePlayIH implements InvocationHandler {
     /**
      * 调用被代理的方法
      * 所以可以有不同的代理，继承自InvocationHandler,完成不同的代理任务
-     * */
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Exception {
         Object result = method.invoke(this.obj, args);

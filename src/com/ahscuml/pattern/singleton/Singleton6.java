@@ -8,7 +8,8 @@ package com.ahscuml.pattern.singleton;
 public class Singleton6 {
     private static volatile Singleton6 singleton;
 
-    private Singleton6() {}
+    private Singleton6() {
+    }
 
     /**
      * 懒汉式

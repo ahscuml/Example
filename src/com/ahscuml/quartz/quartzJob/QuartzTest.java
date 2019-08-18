@@ -16,6 +16,7 @@ import static org.quartz.JobBuilder.newJob;
  */
 public class QuartzTest {
     public static Logger logger = LoggerFactory.getLogger(QuartzTest.class);
+
     public static void main(String[] args) {
         try {
             Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();

@@ -57,7 +57,7 @@ public class Knapsack01 {
 
     /**
      * 通过一个一维数组来解决01背包问题
-     * */
+     */
     public static int knapII(int[] cost, int[] vol, int bag) {
         int rows = cost.length;
         int cols = bag + 1;

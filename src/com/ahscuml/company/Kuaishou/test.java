@@ -12,7 +12,7 @@ public class test {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String[] s2 = s.split(" ");
-        for (String str: s2) {
+        for (String str : s2) {
             System.out.println(str);
         }
         Queue queue = new LinkedList();

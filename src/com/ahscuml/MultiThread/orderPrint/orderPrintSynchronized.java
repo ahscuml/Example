@@ -3,6 +3,7 @@ package com.ahscuml.MultiThread.orderPrint;
 /**
  * 打印1到10的想法
  * 使用synchronized关键字，确保每一次只有一个线程可以获得锁，然后执行方法。
+ *
  * @author ahscuml
  * @date 2019/4/9
  * @time 23:02

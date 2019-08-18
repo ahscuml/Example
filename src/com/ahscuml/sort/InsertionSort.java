@@ -16,7 +16,7 @@ public class InsertionSort {
         int[] num2 = Arrays.copyOf(num, num.length);
         sortTestHelper.testSort("com.ahscuml.sort.InsertionSort", "insertionSort", num);
         sortTestHelper.testSort("com.ahscuml.sort.InsertionSort", "insertionSortII", num2);
-        int[] num3 = sortTestHelper.genetateNearlySorted(N,  10);
+        int[] num3 = sortTestHelper.genetateNearlySorted(N, 10);
         // 近乎有序的数组
         sortTestHelper.testSort("com.ahscuml.sort.InsertionSort", "insertionSort", num3);
     }
@@ -46,8 +46,8 @@ public class InsertionSort {
         for (int i = 0; i < num.length; i++) {
             int temp = num[i];
             int j = i;
-            for (; j > 0 ; j--) {
-                if( temp < num[j - 1])
+            for (; j > 0; j--) {
+                if (temp < num[j - 1])
                     num[j] = num[j - 1];
                 else
                     break;

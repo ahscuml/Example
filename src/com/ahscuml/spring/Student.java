@@ -1,7 +1,5 @@
 package com.ahscuml.spring;
 
-import org.springframework.context.annotation.Bean;
-
 /**
  * @author ahscuml
  * @date 2019/5/10

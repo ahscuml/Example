@@ -1,7 +1,5 @@
 package com.ahscuml.company.NetEase;
 
-import java.util.Scanner;
-
 /**
  * @author ahscuml
  * @date 2019/3/9
@@ -34,7 +32,7 @@ public class Q1 {
         System.out.println(res(w, l, s1));
         int w1 = 1;
         int l1 = 1;
-        System.out.println(res(w1,l1,s));
+        System.out.println(res(w1, l1, s));
     }
 
     public static int res(int width, int length, String s) {

@@ -27,7 +27,7 @@ public class Q20172 {
             }
         }
         StringBuilder sb = new StringBuilder();
-        for(char a : array) {
+        for (char a : array) {
             sb.append(a);
         }
         return sb.toString();

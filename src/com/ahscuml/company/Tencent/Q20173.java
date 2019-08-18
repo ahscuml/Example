@@ -18,7 +18,7 @@ public class Q20173 {
 
     private static String res(String s) {
         char[] array = s.toCharArray();
-        for(int i = array.length; i >= 0; i--) {
+        for (int i = array.length; i >= 0; i--) {
 
         }
         return s;

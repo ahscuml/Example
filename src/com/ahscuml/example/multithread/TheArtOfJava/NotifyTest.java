@@ -37,7 +37,7 @@ public class NotifyTest {
 
     /**
      * 同步方法
-     * */
+     */
     public synchronized void testWait() {
         System.out.println(Thread.currentThread().getName() + " Start-----");
         try {

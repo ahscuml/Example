@@ -14,9 +14,9 @@ public class Test {
 }
 
 
-
-class thread implements Runnable{
+class thread implements Runnable {
     int count = 0;
+
     @Override
     public void run() {
         System.out.println(count);

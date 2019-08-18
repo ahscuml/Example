@@ -7,8 +7,10 @@ package com.ahscuml.basic;
  */
 public class test {
     public static void main(String[] args) {
-        lambda la = (String a,String b) -> {return a + b;};
-        la.test("a","b");
-        System.out.println(la.lambda("a","b"));
+        lambda la = (String a, String b) -> {
+            return a + b;
+        };
+        la.test("a", "b");
+        System.out.println(la.lambda("a", "b"));
     }
 }

@@ -7,5 +7,6 @@ package com.ahscuml.container;
  */
 public interface Collection {
     void add(Object obj);
+
     void remove(Object obj);
 }

@@ -10,7 +10,7 @@ public class GamePlayerProxy implements IGamePlayer {
 
     /**
      * 通过构造函数来传递要对谁进行代练
-     * */
+     */
     public GamePlayerProxy(IGamePlayer _gamePlayer) {
         this.gamePlayer = _gamePlayer;
     }

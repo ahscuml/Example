@@ -10,7 +10,7 @@ public class GamePlayerProxy implements IGamePlayer {
 
     /**
      * 通过构造函数来传递要对谁进行代练
-     * */
+     */
     public GamePlayerProxy(String name) {
         try {
             // 只能通过代理来创建对象

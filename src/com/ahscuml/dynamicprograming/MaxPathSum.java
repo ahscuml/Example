@@ -9,7 +9,7 @@ package com.ahscuml.dynamicprograming;
  */
 public class MaxPathSum {
     public static void main(String[] args) {
-        int[][] matrix = {{1,3,5,9},{8,1,3,4},{5,0,6,1},{8,8,4,0}};
+        int[][] matrix = {{1, 3, 5, 9}, {8, 1, 3, 4}, {5, 0, 6, 1}, {8, 8, 4, 0}};
         System.out.println(maxPathSum1(matrix));
         System.out.println(maxPathSum1(matrix));
     }
@@ -17,7 +17,7 @@ public class MaxPathSum {
     /**
      * 创建一个二维数组来存储内容，dp[i][j]代表到达当前节点的最小路径值
      * 时间复杂度O(M * N),空间复杂度O(M * N)
-     * */
+     */
     public static int maxPathSum1(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return 0;
@@ -32,7 +32,7 @@ public class MaxPathSum {
         }
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[0].length; j++) {
-                dp[i][j] = Math.min(dp[i - 1][j],dp[i][j - 1]) + matrix[i][j];
+                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + matrix[i][j];
             }
         }
         return dp[matrix.length - 1][matrix[0].length - 1];
@@ -40,7 +40,7 @@ public class MaxPathSum {
 
     /**
      * 对于上面的方法的优化，时间复杂度不变，但是空间复杂度变为O(mni(M,N))
-     * */
+     */
     public static int maxPathSum2(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return 0;

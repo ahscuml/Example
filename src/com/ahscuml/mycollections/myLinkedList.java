@@ -12,7 +12,7 @@ public class myLinkedList<E> {
 
     /**
      * 添加节点(注意处理添加第一个节点的情况)
-     * */
+     */
     public boolean add(E val) {
         Node<E> node = new Node(last, val, null);
         if (last == null) {
@@ -27,7 +27,7 @@ public class myLinkedList<E> {
 
     /**
      * 按照index添加节点
-     * */
+     */
     public void add(int index, E val) {
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("输入错误");
@@ -42,7 +42,7 @@ public class myLinkedList<E> {
 
     /**
      * 返回当前index的节点
-     * */
+     */
     private Node node(int index) {
         Node<E> cur = new Node(null, -1, null);
         if (index < (size << 1)) {
@@ -61,7 +61,7 @@ public class myLinkedList<E> {
 
     /**
      * 删除当前值的节点
-     * */
+     */
     public boolean remove(E val) {
         Node<E> cur = first;
         boolean isRemoved = false;
@@ -91,14 +91,14 @@ public class myLinkedList<E> {
 
     /**
      * 获取当前容量
-     * */
+     */
     public int getSize() {
         return size;
     }
 
     /**
      * Node节点的创建
-     * */
+     */
     private class Node<E> {
         Node<E> pre;
         Node<E> next;

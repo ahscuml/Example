@@ -188,15 +188,15 @@ public class test {
      * 堆排序，下标从0开始, 按照最大堆来进行排序
      *
      * @param arr 数组
-     * @param r 右边排序的边界
-     * */
+     * @param r   右边排序的边界
+     */
     public void heapSort(int[] arr, int r) {
-        if(r == 1) {
+        if (r == 1) {
             return;
         }
         // 针对数组进行建堆的操作
         int temp = arr[0];
-        for (int i = (r - 1) / 2; i >= 1 ; i--) {
+        for (int i = (r - 1) / 2; i >= 1; i--) {
 
         }
         // 针对建堆完成的数组进行数值的交换

@@ -26,7 +26,7 @@ public class Q4 {
             } else {
                 res = num[num.length - count] / 2.0;
             }
-            System.out.println(String.format("%.2f" , res));
+            System.out.println(String.format("%.2f", res));
         }
     }
 

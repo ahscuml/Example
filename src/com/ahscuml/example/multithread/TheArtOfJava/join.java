@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * @time 19:48
  */
 public class join {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Thread previous = Thread.currentThread();
         for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(new Domino(previous), String.valueOf(i));
@@ -21,6 +21,7 @@ public class join {
 
     static class Domino implements Runnable {
         private Thread thread;
+
         // 构造函数
         public Domino(Thread thread) {
             this.thread = thread;

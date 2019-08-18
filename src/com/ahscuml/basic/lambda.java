@@ -7,7 +7,7 @@ package com.ahscuml.basic;
  */
 @FunctionalInterface
 public interface lambda {
-    public String  lambda(String a, String b);
+    public String lambda(String a, String b);
 
     public default String test(String a, String b) {
         return a + b;

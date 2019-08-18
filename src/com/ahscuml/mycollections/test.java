@@ -1,7 +1,5 @@
 package com.ahscuml.mycollections;
 
-import java.util.LinkedList;
-
 /**
  * @author ahscuml
  * @date 2019/4/16
@@ -14,7 +12,7 @@ public class test {
         linkedList.add(4);
         System.out.println(linkedList.getSize());
         linkedList.remove(5);
-        linkedList.add(0,1);
+        linkedList.add(0, 1);
         System.out.println(linkedList.getSize());
         linkedList.remove(4);
         System.out.println(linkedList.getSize());

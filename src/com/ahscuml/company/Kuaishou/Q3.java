@@ -12,7 +12,7 @@ public class Q3 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int count = 0;
-        while(n != 0) {
+        while (n != 0) {
             if (n % 2 == 1)
                 count++;
             n /= 2;

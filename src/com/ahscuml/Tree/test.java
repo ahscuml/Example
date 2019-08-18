@@ -192,21 +192,21 @@ public class test {
     }
 
     public static void LevelOrderIte(TreeNode root) {
-       if (root == null) {
-           return;
-       }
-       Queue<TreeNode> queue = new LinkedList<>();
-       TreeNode cur;
-       queue.offer(root);
-       while (!queue.isEmpty()) {
-           cur = queue.poll();
-           System.out.print(cur.val + " ");
-           if (cur.left != null) {
-               queue.offer(cur.left);
-           }
-           if (cur.right != null) {
-               queue.offer(cur.right);
-           }
-       }
+        if (root == null) {
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode cur;
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            cur = queue.poll();
+            System.out.print(cur.val + " ");
+            if (cur.left != null) {
+                queue.offer(cur.left);
+            }
+            if (cur.right != null) {
+                queue.offer(cur.right);
+            }
+        }
     }
 }

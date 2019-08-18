@@ -14,7 +14,7 @@ public class Amazon {
             System.out.print("请输入n的值:");
             Scanner scan = new Scanner(System.in);
             n = scan.nextInt();
-            if(n == 1 || n == 4) {
+            if (n == 1 || n == 4) {
                 System.out.println("别拿了，你输了");
             } else if (!isWin(n - 1)) {
                 System.out.println("拿一个球");

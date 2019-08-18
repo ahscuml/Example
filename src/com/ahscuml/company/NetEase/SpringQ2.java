@@ -39,7 +39,7 @@ public class SpringQ2 {
                 if (j > 0 && j < n - 1) {
                     sum = array[j - 1] + array[j + 1];
                     if (sum <= array[j]) {
-                        flag=false;
+                        flag = false;
                         break;
                     }
                 }

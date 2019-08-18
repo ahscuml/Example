@@ -11,6 +11,7 @@ public class GamePlayer implements IGamePlayer {
     public GamePlayer(String _name) {
         this.name = _name;
     }
+
     @Override
     public void killBoss() {
         System.out.println(this.name + "在打怪");

@@ -14,7 +14,7 @@ public class Test {
         Stack<Integer> stack = new Stack<>();
         Vector<Integer> vector = new Vector<>();
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
-        HashMap<Integer,Integer> hashMap = new HashMap<>();
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
         Queue<Integer> priorityQueue = new PriorityQueue<>();
     }
 }

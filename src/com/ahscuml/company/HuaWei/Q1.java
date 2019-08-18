@@ -13,7 +13,8 @@ public class Q1 {
         // 特殊情况，为空判断
         while (sc.hasNextLine()) {
             String str = sc.nextLine();
-            System.out.println(helper(str));;
+            System.out.println(helper(str));
+            ;
         }
     }
 
@@ -24,7 +25,7 @@ public class Q1 {
         // 3. 前后两个一致，继续用双指针
         int n = str.length();
         // 满足第二点
-        if(n % 2 != 0) {
+        if (n % 2 != 0) {
             return "false";
         }
         // 解决第一点
@@ -45,8 +46,8 @@ public class Q1 {
                 return "false";
             }
             sb.append(str.charAt(i));
-            i+=2;
-            j+=2;
+            i += 2;
+            j += 2;
         }
         // 输出结果，对称的单字符串
         return sb.toString();

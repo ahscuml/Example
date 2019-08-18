@@ -89,7 +89,7 @@ public class KMP {
 
     /**
      * 没有用subString这个函数的简单筛选子串函数
-     * */
+     */
     private static void stringMatch(String souce, String pattern) {
         int souurceLength = souce.length();
         int patternLength = pattern.length();

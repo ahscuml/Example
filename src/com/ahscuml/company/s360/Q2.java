@@ -1,9 +1,10 @@
 package com.ahscuml.company.s360;
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * 求知道所有元素值的最小的花费
+ *
  * @author ahscuml
  * @date 2019/3/7
  * @time 20:19
@@ -15,7 +16,7 @@ public class Q2 {
         int[][] num = new int[N][N];
         int i = 0, j = 0, k = N;
         while (in.hasNext()) {
-            if(i < N) {
+            if (i < N) {
                 num[i][j] = in.nextInt();
                 i++;
             } else {
@@ -28,25 +29,25 @@ public class Q2 {
         System.out.println(find(N, num));
     }
 
-        public static int find(int N, int[][] num) {
-            int temp = Integer.MAX_VALUE;
-            int res1 = 0;
-            for(int i = 0; i < N; i++) {
-                for(int j = 0; j <= i; j++) {
-                    temp = Math.min(temp, num[i][j]);
-                }
-                res1 += temp;
-                temp = Integer.MAX_VALUE;
+    public static int find(int N, int[][] num) {
+        int temp = Integer.MAX_VALUE;
+        int res1 = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j <= i; j++) {
+                temp = Math.min(temp, num[i][j]);
             }
+            res1 += temp;
             temp = Integer.MAX_VALUE;
-            int res2 = 0;
-            for(int i = 0; i < N; i++) {
-                for(int j = i; j < N; j++) {
-                    temp = Math.min(temp, num[j][i]);
-                }
-                res2 += temp;
-                temp = Integer.MAX_VALUE;
-            }
-            return Math.min(res1, res2);
         }
+        temp = Integer.MAX_VALUE;
+        int res2 = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = i; j < N; j++) {
+                temp = Math.min(temp, num[j][i]);
+            }
+            res2 += temp;
+            temp = Integer.MAX_VALUE;
+        }
+        return Math.min(res1, res2);
+    }
 }

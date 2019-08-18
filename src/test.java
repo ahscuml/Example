@@ -1,4 +1,3 @@
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -36,7 +35,7 @@ public class test {
         System.out.println(list.toString());
         Collections.reverse(list);
 
-        ArrayList<Integer> listSorted=new ArrayList<Integer>(Arrays.asList(new Integer[list.size()]));
+        ArrayList<Integer> listSorted = new ArrayList<Integer>(Arrays.asList(new Integer[list.size()]));
         Collections.copy(listSorted, list);
     }
 }

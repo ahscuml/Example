@@ -74,7 +74,7 @@ public class EqualsAnd {
 
     /**
      * 针对包装对象的类型隐藏
-     * */
+     */
     public static void method() {
         Integer i1 = 100;
         Integer i2 = 100;
@@ -88,7 +88,7 @@ public class EqualsAnd {
 
     /**
      * 通过方法调用返回的对象
-     * */
+     */
     public static class Main {
         public static void test() {
             String a = "hello2";

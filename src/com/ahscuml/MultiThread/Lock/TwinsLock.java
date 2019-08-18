@@ -10,6 +10,14 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 public class TwinsLock {
     private final Sync sync = new Sync(2);
 
+    public void lock() {
+        sync.acquireShared(1);
+    }
+
+    public void unlock() {
+        sync.releaseShared(1);
+    }
+
     private static final class Sync extends AbstractQueuedSynchronizer {
         Sync(int count) {
             if (count <= 0) {
@@ -39,13 +47,5 @@ public class TwinsLock {
                 }
             }
         }
-    }
-
-    public void lock() {
-        sync.acquireShared(1);
-    }
-
-    public void unlock() {
-        sync.releaseShared(1);
     }
 }

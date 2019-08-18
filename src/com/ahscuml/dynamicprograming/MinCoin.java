@@ -7,7 +7,7 @@ package com.ahscuml.dynamicprograming;
  */
 public class MinCoin {
     public static void main(String[] args) {
-        int[] coins = {1,2,5};
+        int[] coins = {1, 2, 5};
         int target = 11;
         System.out.println(minCoin1(coins, target));
     }
@@ -15,7 +15,7 @@ public class MinCoin {
     /**
      * 首先要找到递推的关系式
      * dp[j]就是凑成j最少有多少种方法
-     * */
+     */
     public static int minCoin1(int[] num, int target) {
         int[] dp = new int[target + 1];
         dp[0] = 0;

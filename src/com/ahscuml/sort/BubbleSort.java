@@ -29,7 +29,7 @@ public class BubbleSort {
 
     /**
      * 遍历一遍数组，交换相邻的两个元素(每一次最后一个元素可以确定)
-     * */
+     */
     public static void bubbleSort(int[] num) {
         int n = num.length;
         for (int i = 0; i < n - 1; i++) {
@@ -45,7 +45,7 @@ public class BubbleSort {
 
     /**
      * 冒泡排序的优化，遍历一遍之后看是否已经有序，如果有序，直接退出。
-     * */
+     */
     public static void bubbleSortII(int[] num) {
         int n = num.length;
         boolean swapped = false;
@@ -53,7 +53,7 @@ public class BubbleSort {
         do {
             swapped = false;
             for (int i = 1; i < n; i++) {
-                if (num[i - 1] > num[i]){
+                if (num[i - 1] > num[i]) {
                     swap(num, i - 1, i);
                     swapped = true;
                 }

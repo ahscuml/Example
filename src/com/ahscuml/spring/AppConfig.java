@@ -11,12 +11,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
     @Bean(name = "baicai")
-    public Food food(){
+    public Food food() {
         return new Food("baicai");
     }
 
     @Bean(name = "ming")
-    public Student student(){
+    public Student student() {
         return new Student("ming");
     }
 }

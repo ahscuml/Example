@@ -42,7 +42,7 @@ public class KnapsackAll {
 
     /**
      * 通过一维数组来解决这个问题
-     * */
+     */
     public static int knapII(int[] cost, int[] vol, int bag) {
         int[] dp = new int[bag + 1];
         // 注意完全背包问题的遍历顺序是顺序遍历的，都是从1开始的

@@ -54,11 +54,11 @@ public class Mutex implements Lock {
 
     /**
      * 静态内部类，也就是AQS的实现
-     * */
+     */
     private static class Sync extends AbstractQueuedSynchronizer {
         /**
          * 是否被当前线程独占
-         * */
+         */
         @Override
         protected boolean isHeldExclusively() {
             // 返回当前线程有几个线程在调用
@@ -76,7 +76,7 @@ public class Mutex implements Lock {
 
         @Override
         protected boolean tryRelease(int releases) {
-            if (getState() == 0){
+            if (getState() == 0) {
                 throw new IllegalMonitorStateException();
             }
             setExclusiveOwnerThread(null);
