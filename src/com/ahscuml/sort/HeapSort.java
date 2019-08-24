@@ -17,6 +17,7 @@ public class HeapSort {
         int[] num2 = sortTestHelper.genetateNearlySorted(N, 10);
 
         sortTestHelper.testSort("com.ahscuml.sort.HeapSort", "heapSort", num);
+        sortTestHelper.testSort("com.ahscuml.sort.HeapSort", "heapSort2", num);
     }
 
     /**
