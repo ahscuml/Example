@@ -6,11 +6,11 @@ package com.ahscuml.pattern.proxy.common;
  * @time 10:12
  */
 public class GamePlayer implements IGamePlayer {
-    private String name = "";
+    private String name;
 
     /**
      * 构造函数限制谁可以创建对象，并且同时创建姓名
-     * 限制了智能拥有代理之后才能创建对象 IGamePlayer _gamePlayer
+     * 限制了只能拥有代理之后才能创建对象 IGamePlayer _gamePlayer
      */
     public GamePlayer(IGamePlayer _gamePlayer, String _name) throws Exception {
         if (_gamePlayer == null) {
